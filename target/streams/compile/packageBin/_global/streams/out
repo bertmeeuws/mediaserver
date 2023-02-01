@@ -1,0 +1,31 @@
+[0m[[0m[0mdebug[0m] [0m[0mPackaging /Users/bertmeeuws/Desktop/scala/JellyFin/target/scala-2.13/jellyfin_2.13-0.1.0-SNAPSHOT.jar ...[0m
+[0m[[0m[0mdebug[0m] [0m[0mInput file mappings:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Main$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/bertmeeuws/Desktop/scala/JellyFin/target/scala-2.13/classes/Main$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Main.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/bertmeeuws/Desktop/scala/JellyFin/target/scala-2.13/classes/Main.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	controllers[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/bertmeeuws/Desktop/scala/JellyFin/target/scala-2.13/classes/controllers[0m
+[0m[[0m[0mdebug[0m] [0m[0m	controllers/FileManagerController.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/bertmeeuws/Desktop/scala/JellyFin/target/scala-2.13/classes/controllers/FileManagerController.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	com[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/bertmeeuws/Desktop/scala/JellyFin/target/scala-2.13/classes/com[0m
+[0m[[0m[0mdebug[0m] [0m[0m	com/server[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/bertmeeuws/Desktop/scala/JellyFin/target/scala-2.13/classes/com/server[0m
+[0m[[0m[0mdebug[0m] [0m[0m	com/server/Server$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/bertmeeuws/Desktop/scala/JellyFin/target/scala-2.13/classes/com/server/Server$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	com/server/Server.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/bertmeeuws/Desktop/scala/JellyFin/target/scala-2.13/classes/com/server/Server.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	com/actors[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/bertmeeuws/Desktop/scala/JellyFin/target/scala-2.13/classes/com/actors[0m
+[0m[[0m[0mdebug[0m] [0m[0m	com/actors/RootActor.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/bertmeeuws/Desktop/scala/JellyFin/target/scala-2.13/classes/com/actors/RootActor.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	com/actors/RootActor$RootStoreCommand.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/bertmeeuws/Desktop/scala/JellyFin/target/scala-2.13/classes/com/actors/RootActor$RootStoreCommand.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	com/actors/RootActor$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/bertmeeuws/Desktop/scala/JellyFin/target/scala-2.13/classes/com/actors/RootActor$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	com/controllers[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/bertmeeuws/Desktop/scala/JellyFin/target/scala-2.13/classes/com/controllers[0m
+[0m[[0m[0mdebug[0m] [0m[0m	com/controllers/VideoController.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/bertmeeuws/Desktop/scala/JellyFin/target/scala-2.13/classes/com/controllers/VideoController.class[0m
+[0m[[0m[0mdebug[0m] [0m[0mDone packaging.[0m
