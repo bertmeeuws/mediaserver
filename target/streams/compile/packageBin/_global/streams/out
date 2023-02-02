@@ -16,6 +16,16 @@
 [0m[[0m[0mdebug[0m] [0m[0m	  /Users/bertmeeuws/Desktop/scala/JellyFin/target/scala-2.13/classes/com/server/Server$.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	com/server/Server.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	  /Users/bertmeeuws/Desktop/scala/JellyFin/target/scala-2.13/classes/com/server/Server.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	com/models[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/bertmeeuws/Desktop/scala/JellyFin/target/scala-2.13/classes/com/models[0m
+[0m[[0m[0mdebug[0m] [0m[0m	com/models/FileManagerModels$FileItem$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/bertmeeuws/Desktop/scala/JellyFin/target/scala-2.13/classes/com/models/FileManagerModels$FileItem$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	com/models/FileManagerModels.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/bertmeeuws/Desktop/scala/JellyFin/target/scala-2.13/classes/com/models/FileManagerModels.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	com/models/FileManagerModels$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/bertmeeuws/Desktop/scala/JellyFin/target/scala-2.13/classes/com/models/FileManagerModels$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	com/models/FileManagerModels$FileItem.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/bertmeeuws/Desktop/scala/JellyFin/target/scala-2.13/classes/com/models/FileManagerModels$FileItem.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	com/actors[0m
 [0m[[0m[0mdebug[0m] [0m[0m	  /Users/bertmeeuws/Desktop/scala/JellyFin/target/scala-2.13/classes/com/actors[0m
 [0m[[0m[0mdebug[0m] [0m[0m	com/actors/RootActor.class[0m
