@@ -12,17 +12,18 @@ import javax.swing.ImageIcon
 import scala.{::, _}
 import akka.http.scaladsl.marshalling.Marshal
 import akka.http.scaladsl.unmarshalling.Unmarshal
+import com.domain.Router
 
 
 
 
-class FileManagerController(store: ActorRef[Nothing])(val system: ActorSystem[_]) extends FailFastCirceSupport {
+class FileManagerController(store: ActorRef[Nothing])(val system: ActorSystem[_]) extends FailFastCirceSupport with Router {
   var currentPath = "/Users/bertmeeuws/Movies"
 
   import com.models.FileManagerModels._
   import com.auth.Utils._
 
-  val routes: Route = {
+  override val routes: Route = {
     path("filemanager") {
       authenticateBasic(realm = "secure site", authenticator) { userName =>
       pathEnd {

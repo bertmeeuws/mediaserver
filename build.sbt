@@ -30,3 +30,5 @@ libraryDependencies ++= Seq(
 // https://mvnrepository.com/artifact/de.heikoseeberger/akka-http-circe
 libraryDependencies += "de.heikoseeberger" %% "akka-http-circe" % "1.39.2"
 resolvers ++= Seq("central" at "https://repo1.maven.org/maven2/")
+
+addCompilerPlugin("org.typelevel" % "kind-projector" % "0.13.2" cross CrossVersion.full)

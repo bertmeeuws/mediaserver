@@ -1,29 +1,30 @@
 [0m[[0m[0mdebug[0m] [0m[0m[zinc] IncrementalCompile -----------[0m
 [0m[[0m[0mdebug[0m] [0m[0mIncrementalCompile.incrementalCompile[0m
-[0m[[0m[0mdebug[0m] [0m[0mprevious = Stamps for: 21 products, 8 sources, 10 libraries[0m
-[0m[[0m[0mdebug[0m] [0m[0mcurrent source = Set(${BASE}/src/main/scala/models/FileManager.scala, ${BASE}/src/main/scala/server/Server.scala, ${BASE}/src/main/scala/controllers/VideoController.scala, ${BASE}/src/main/scala/controllers/AuthenticationController.scala, ${BASE}/src/main/scala/Main.scala, ${BASE}/src/main/scala/actors/RootActor.scala, ${BASE}/src/main/scala/controllers/FileManagerController.scala, ${BASE}/src/main/scala/auth/utils.scala)[0m
-[0m[[0m[0mdebug[0m] [0m[0m> initialChanges = InitialChanges(Changes(added = Set(), removed = Set(), changed = Set(${BASE}/src/main/scala/controllers/AuthenticationController.scala), unmodified = ...),Set(),Set(),API Changes: Set())[0m
+[0m[[0m[0mdebug[0m] [0m[0mprevious = Stamps for: 35 products, 13 sources, 10 libraries[0m
+[0m[[0m[0mdebug[0m] [0m[0mcurrent source = Set(${BASE}/src/main/scala/errorHandling/authHandler.scala, ${BASE}/src/main/scala/models/FileManager.scala, ${BASE}/src/main/scala/server/Server.scala, ${BASE}/src/main/scala/controllers/VideoController.scala, ${BASE}/src/main/scala/controllers/AuthenticationController.scala, ${BASE}/src/main/scala/Main.scala, ${BASE}/src/main/scala/domain/Directives.scala, ${BASE}/src/main/scala/actors/RootActor.scala, ${BASE}/src/main/scala/controllers/FileManagerController.scala, ${BASE}/src/main/scala/services/UserService.scala, ${BASE}/src/main/scala/auth/utils.scala, ${BASE}/src/main/scala/domain/Service.scala, ${BASE}/src/main/scala/models/UserModel.scala)[0m
+[0m[[0m[0mdebug[0m] [0m[0m> initialChanges = InitialChanges(Changes(added = Set(), removed = Set(), changed = Set(${BASE}/src/main/scala/errorHandling/authHandler.scala), unmodified = ...),Set(),Set(),API Changes: Set())[0m
 [0m[[0m[0mdebug[0m] [0m[0m[0m
 [0m[[0m[0mdebug[0m] [0m[0mInitial source changes:[0m
 [0m[[0m[0mdebug[0m] [0m[0m	removed: Set()[0m
 [0m[[0m[0mdebug[0m] [0m[0m	added: Set()[0m
-[0m[[0m[0mdebug[0m] [0m[0m	modified: Set(${BASE}/src/main/scala/controllers/AuthenticationController.scala)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	modified: Set(${BASE}/src/main/scala/errorHandling/authHandler.scala)[0m
 [0m[[0m[0mdebug[0m] [0m[0mInvalidated products: Set()[0m
 [0m[[0m[0mdebug[0m] [0m[0mExternal API changes: API Changes: Set()[0m
 [0m[[0m[0mdebug[0m] [0m[0mModified binary dependencies: Set()[0m
-[0m[[0m[0mdebug[0m] [0m[0mInitial directly invalidated classes: Set(controllers.AuthenticationController)[0m
+[0m[[0m[0mdebug[0m] [0m[0mInitial directly invalidated classes: Set(errorHandling.authExceptions)[0m
 [0m[[0m[0mdebug[0m] [0m[0mSources indirectly invalidated by:[0m
 [0m[[0m[0mdebug[0m] [0m[0m	product: Set()[0m
 [0m[[0m[0mdebug[0m] [0m[0m	binary dep: Set()[0m
 [0m[[0m[0mdebug[0m] [0m[0m	external source: Set()[0m
-[0m[[0m[0mdebug[0m] [0m[0mAll initially invalidated classes: Set(controllers.AuthenticationController)[0m
-[0m[[0m[0mdebug[0m] [0m[0mAll initially invalidated sources:Set(${BASE}/src/main/scala/controllers/AuthenticationController.scala)[0m
-[0m[[0m[0mdebug[0m] [0m[0mInitial set of included nodes: controllers.AuthenticationController[0m
+[0m[[0m[0mdebug[0m] [0m[0mAll initially invalidated classes: Set(errorHandling.authExceptions)[0m
+[0m[[0m[0mdebug[0m] [0m[0mAll initially invalidated sources:Set(${BASE}/src/main/scala/errorHandling/authHandler.scala)[0m
+[0m[[0m[0mdebug[0m] [0m[0mInitial set of included nodes: errorHandling.authExceptions[0m
 [0m[[0m[0mdebug[0m] [0m[0mcompilation cycle 1[0m
 [0m[[0m[0minfo[0m] [0m[0mcompiling 1 Scala source to /Users/bertmeeuws/Desktop/scala/JellyFin/target/scala-2.13/classes ...[0m
 [0m[[0m[0mdebug[0m] [0m[0mGetting org.scala-sbt:compiler-bridge_2.13:1.8.0:compile for Scala 2.13.10[0m
-[0m[[0m[0mdebug[0m] [0m[0m[zinc] Running cached compiler 136699d for Scala compiler version 2.13.10[0m
+[0m[[0m[0mdebug[0m] [0m[0m[zinc] Running cached compiler 50c6d1c0 for Scala compiler version 2.13.10[0m
 [0m[[0m[0mdebug[0m] [0m[0m[zinc] The Scala compiler is invoked with:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	-Xplugin:/Users/bertmeeuws/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/typelevel/kind-projector_2.13.10/0.13.2/kind-projector_2.13.10-0.13.2.jar[0m
 [0m[[0m[0mdebug[0m] [0m[0m	-bootclasspath[0m
 [0m[[0m[0mdebug[0m] [0m[0m	/Users/bertmeeuws/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.10/scala-library-2.13.10.jar[0m
 [0m[[0m[0mdebug[0m] [0m[0m	-classpath[0m
@@ -34,5 +35,5 @@
 [0m[[0m[0mdebug[0m] [0m[0mFinal step, transitive dependencies:[0m
 [0m[[0m[0mdebug[0m] [0m[0m	Set()[0m
 [0m[[0m[0mdebug[0m] [0m[0mNo classes were invalidated.[0m
-[0m[[0m[0mdebug[0m] [0m[0mScala compilation took 2.2898245 s[0m
+[0m[[0m[0mdebug[0m] [0m[0mScala compilation took 1.343862459 s[0m
 [0m[[0m[0mdebug[0m] [0m[0mdone compiling[0m

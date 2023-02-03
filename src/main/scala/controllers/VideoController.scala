@@ -5,16 +5,17 @@ import akka.http.scaladsl.model.{HttpEntity, HttpResponse, MediaTypes, StatusCod
 import akka.http.scaladsl.model.headers.RawHeader
 import akka.http.scaladsl.server.Directives._
 import akka.http.scaladsl.server.Route
+import com.domain.Router
 import de.heikoseeberger.akkahttpcirce.FailFastCirceSupport
 
 import java.io.{File, RandomAccessFile}
 
 
 
-class VideoController(store: ActorRef[Nothing])(val system: ActorSystem[_]) extends FailFastCirceSupport {
+class VideoController(store: ActorRef[Nothing])(val system: ActorSystem[_]) extends FailFastCirceSupport with Router {
   val videoPath = "/Users/bertmeeuws/Movies/music.mp4"
 
-  val routes: Route = {
+  override val routes: Route = {
     path("video") {
       pathEnd {
         get {
