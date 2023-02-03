@@ -1,12 +1,8 @@
 [0m[[0m[0mdebug[0m] [0m[0mCreated transactional ClassFileManager with tempDir = /Users/bertmeeuws/Desktop/scala/JellyFin/target/scala-2.13/classes.bak[0m
 [0m[[0m[0mdebug[0m] [0m[0mAbout to delete class files:[0m
-[0m[[0m[0mdebug[0m] [0m[0m	FileManagerController.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	AuthenticationController.class[0m
 [0m[[0m[0mdebug[0m] [0m[0mWe backup class files:[0m
-[0m[[0m[0mdebug[0m] [0m[0m	FileManagerController.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	AuthenticationController.class[0m
 [0m[[0m[0mdebug[0m] [0m[0mRegistering generated classes:[0m
-[0m[[0m[0mdebug[0m] [0m[0m	FileManagerController.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	FileManagerModels$FileItem.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	FileManagerModels$FileItem$.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	FileManagerModels$.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	FileManagerModels.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	AuthenticationController.class[0m
 [0m[[0m[0mdebug[0m] [0m[0mRemoving the temporary directory used for backing up class files: /Users/bertmeeuws/Desktop/scala/JellyFin/target/scala-2.13/classes.bak[0m

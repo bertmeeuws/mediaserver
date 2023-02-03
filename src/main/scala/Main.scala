@@ -8,7 +8,8 @@ import akka.http.scaladsl.server.Directives._
 import com.controllers._
 import com.server.Server
 import com.actors._
-import controllers.FileManagerController
+import controllers._
+
 
 
 object Main {
@@ -21,8 +22,9 @@ object Main {
 
       val videoController = new VideoController(store)(context.system)
       val fileManager = new FileManagerController(store)(context.system)
+      val authenticationController = new AuthenticationController(store)(context.system)
 
-      val routes: Route = videoController.routes ~ fileManager.routes
+      val routes: Route = videoController.routes ~ fileManager.routes ~ authenticationController.routes
 
       Server.Bootstrap(routes)(context.system)
       Behaviors.same

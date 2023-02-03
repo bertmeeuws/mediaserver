@@ -10,6 +10,9 @@ import java.io.File
 import java.nio.file.FileSystems
 import javax.swing.ImageIcon
 import scala.{::, _}
+import akka.http.scaladsl.marshalling.Marshal
+import akka.http.scaladsl.unmarshalling.Unmarshal
+
 
 
 
@@ -17,9 +20,11 @@ class FileManagerController(store: ActorRef[Nothing])(val system: ActorSystem[_]
   var currentPath = "/Users/bertmeeuws/Movies"
 
   import com.models.FileManagerModels._
+  import com.auth.Utils._
 
   val routes: Route = {
     path("filemanager") {
+      authenticateBasic(realm = "secure site", authenticator) { userName =>
       pathEnd {
         val dir = new File(currentPath)
 
@@ -29,9 +34,10 @@ class FileManagerController(store: ActorRef[Nothing])(val system: ActorSystem[_]
           fileItem :: acc
         })
 
-        println(libraryFiles)
+        println(userName)
 
-        complete(StatusCodes.OK)
+        complete(StatusCodes.OK, List(libraryFiles))
+      }
       }
     }
   }
