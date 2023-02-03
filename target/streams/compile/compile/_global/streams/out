@@ -1,4 +1,13 @@
-[0m[[0m[33mwarn[0m] [0m[0m/Users/bertmeeuws/Desktop/scala/JellyFin/src/main/scala/errorHandling/authHandler.scala:51:28: unreachable code[0m
-[0m[[0m[33mwarn[0m] [0m[0m      case (left,right) => left[0m
-[0m[[0m[33mwarn[0m] [0m[0m                           ^[0m
-[0m[[0m[33mwarn[0m] [0m[0mone warning found[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/bertmeeuws/Desktop/scala/JellyFin/src/main/scala/errorHandling/authHandler.scala:23:30: ambiguous implicit values:[0m
+[0m[[0m[31merror[0m] [0m[0m both value emailValidator in object ValidateTypeclasses of type com.utils.Validator[com.utils.ValidateTypeclasses.Email][0m
+[0m[[0m[31merror[0m] [0m[0m and value dobValidator in object ValidateTypeclasses of type com.utils.Validator[com.utils.ValidateTypeclasses.DOB][0m
+[0m[[0m[31merror[0m] [0m[0m match expected type com.utils.Validator[com.utils.ValidateTypeclasses.Email][0m
+[0m[[0m[31merror[0m] [0m[0m    case a if validate[Email](a) => ae.pure(email)[0m
+[0m[[0m[31merror[0m] [0m[0m                             ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/bertmeeuws/Desktop/scala/JellyFin/src/main/scala/errorHandling/authHandler.scala:28:28: ambiguous implicit values:[0m
+[0m[[0m[31merror[0m] [0m[0m both value emailValidator in object ValidateTypeclasses of type com.utils.Validator[com.utils.ValidateTypeclasses.Email][0m
+[0m[[0m[31merror[0m] [0m[0m and value dobValidator in object ValidateTypeclasses of type com.utils.Validator[com.utils.ValidateTypeclasses.DOB][0m
+[0m[[0m[31merror[0m] [0m[0m match expected type com.utils.Validator[com.utils.ValidateTypeclasses.DOB][0m
+[0m[[0m[31merror[0m] [0m[0m    case a if validate[DOB](a) => ae.pure(dob)[0m
+[0m[[0m[31merror[0m] [0m[0m                           ^[0m
+[0m[[0m[31merror[0m] [0m[0mtwo errors found[0m
