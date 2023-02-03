@@ -26,10 +26,12 @@ class AuthenticationController(store: ActorRef[Nothing])(val system: ActorSystem
       } ~ path("register") {
           post {
             entity(as[RegisterUser]) { user => {
-              println(user)
-              val result = UserService.register(user)
-              println(result)
-              complete(StatusCodes.OK, "test")
+              val result: Either[List[String], String] = UserService.register(user)
+
+              result match {
+                case Left(a) => complete(StatusCodes.BadRequest, a)
+                case Right(b) => complete(StatusCodes.OK, b)
+              }
             }
           }
         }

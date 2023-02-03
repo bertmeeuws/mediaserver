@@ -5,15 +5,13 @@ import com.models.UserModel.RegisterUser
 import errorHandling.authExceptions._
 
 trait UserService {
-  def register(userData: RegisterUser): String
+  def register(userData: RegisterUser): Either[List[String], String]
 }
 
 object UserService extends Service with UserService {
-  override def register(userData: RegisterUser): String = {
+  override def register(userData: RegisterUser): Either[List[String], String] = {
     type MyEither[A] = Either[String, A]
 
-    val result = registerUser[MyEither](userData)
-    println(result)
-    "test"
+    registerUser[MyEither](userData)
   }
 }

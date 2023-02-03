@@ -1,11 +1,4 @@
-[0m[[0m[31merror[0m] [0m[0m/Users/bertmeeuws/Desktop/scala/JellyFin/src/main/scala/errorHandling/authHandler.scala:29:31: type mismatch;[0m
-[0m[[0m[31merror[0m] [0m[0m found   : String("Belgium")[0m
-[0m[[0m[31merror[0m] [0m[0m required: Int[0m
-[0m[[0m[31merror[0m] [0m[0m    case "belgium" => ae.pure("Belgium")[0m
-[0m[[0m[31merror[0m] [0m[0m                              ^[0m
-[0m[[0m[31merror[0m] [0m[0m/Users/bertmeeuws/Desktop/scala/JellyFin/src/main/scala/errorHandling/authHandler.scala:34:35: type mismatch;[0m
-[0m[[0m[31merror[0m] [0m[0m found   : String("Age is allowed")[0m
-[0m[[0m[31merror[0m] [0m[0m required: Int[0m
-[0m[[0m[31merror[0m] [0m[0m    case (a) if a > 18 => ae.pure("Age is allowed")[0m
-[0m[[0m[31merror[0m] [0m[0m                                  ^[0m
-[0m[[0m[31merror[0m] [0m[0mtwo errors found[0m
+[0m[[0m[33mwarn[0m] [0m[0m/Users/bertmeeuws/Desktop/scala/JellyFin/src/main/scala/errorHandling/authHandler.scala:51:28: unreachable code[0m
+[0m[[0m[33mwarn[0m] [0m[0m      case (left,right) => left[0m
+[0m[[0m[33mwarn[0m] [0m[0m                           ^[0m
+[0m[[0m[33mwarn[0m] [0m[0mone warning found[0m
