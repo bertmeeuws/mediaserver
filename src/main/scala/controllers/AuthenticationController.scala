@@ -9,12 +9,14 @@ import akka.http.scaladsl.marshalling.Marshal
 import akka.http.scaladsl.unmarshalling.Unmarshal
 import com.domain.Router
 import com.services.UserService
+import ch.megard.akka.http.cors.scaladsl.CorsDirectives._
+
 
 class AuthenticationController(store: ActorRef[Nothing])(val system: ActorSystem[_]) extends FailFastCirceSupport with Router {
 
   import com.models.UserModel._
 
-  override val routes: Route = {
+  override val routes: Route = cors() {
     pathPrefix("authentication") {
       pathEndOrSingleSlash {
         get {

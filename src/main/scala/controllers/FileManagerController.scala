@@ -13,6 +13,9 @@ import scala.{::, _}
 import akka.http.scaladsl.marshalling.Marshal
 import akka.http.scaladsl.unmarshalling.Unmarshal
 import com.domain.Router
+import com.domain.CORSHandler
+import ch.megard.akka.http.cors.scaladsl.CorsDirectives._
+
 
 
 
@@ -20,10 +23,11 @@ import com.domain.Router
 class FileManagerController(store: ActorRef[Nothing])(val system: ActorSystem[_]) extends FailFastCirceSupport with Router {
   var currentPath = "/Users/bertmeeuws/Movies"
 
+
   import com.models.FileManagerModels._
   import com.auth.Utils._
 
-  override val routes: Route = {
+  override val routes: Route = cors() {
     path("filemanager") {
       authenticateBasic(realm = "secure site", authenticator) { userName =>
       pathEnd {
@@ -35,10 +39,8 @@ class FileManagerController(store: ActorRef[Nothing])(val system: ActorSystem[_]
           fileItem :: acc
         })
 
-        println(userName)
-
-        complete(StatusCodes.OK, List(libraryFiles))
-      }
+          complete(StatusCodes.OK, libraryFiles)
+        }
       }
     }
   }

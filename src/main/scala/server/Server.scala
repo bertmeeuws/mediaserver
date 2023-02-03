@@ -13,7 +13,7 @@ object Server {
 
     import system.executionContext
 
-    val futureBinding = Http().newServerAt("localhost", 3002).bind(routes)
+    val futureBinding = Http().newServerAt("0.0.0.0", 3002).bind(routes)
     StdIn.readLine() // let it run until user presses return
     futureBinding
       .flatMap(_.unbind()) // trigger unbinding from the port
