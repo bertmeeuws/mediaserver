@@ -1,6 +1,0 @@
-[0m[[0m[0mdebug[0m] [0m[0m> Exec(run, Some(aa21522b-599a-4096-83fe-2a3f23f55b40), Some(CommandSource(console0)))[0m
-[0m[[0m[0mdebug[0m] [0m[0mEvaluating tasks: Compile / run[0m
-[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
-[0m[[0m[0minfo[0m] [0m[0mcompiling 2 Scala sources to /Users/bertmeeuws/Desktop/scala/JellyFin/target/scala-2.13/classes ...[0m
-[0m[[0m[32msuccess[0m] [0m[0mTotal time: 5 s, completed 2 Feb 2023, 08:56:00[0m
-[0m[[0m[0mdebug[0m] [0m[0m> Exec(shell, None, None)[0m
