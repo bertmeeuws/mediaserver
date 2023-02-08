@@ -22,6 +22,9 @@ libraryDependencies ++= Seq(
 
 libraryDependencies += "ch.megard" %% "akka-http-cors" % "0.4.1"
 
+libraryDependencies += "net.bramp.ffmpeg" % "ffmpeg" % "0.7.0"
+
+
 
 val circeVersion = "0.14.1"
 

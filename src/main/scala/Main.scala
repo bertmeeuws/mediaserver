@@ -2,6 +2,7 @@
 
 import akka.actor.TypedActor.context
 import akka.actor.typed.ActorSystem
+import akka.actor.typed.scaladsl.AskPattern.Askable
 import akka.actor.typed.scaladsl.Behaviors
 import akka.http.scaladsl.server.Route
 import akka.http.scaladsl.server.Directives._
@@ -11,16 +12,32 @@ import com.actors._
 import controllers._
 import akka.http.scaladsl.marshalling.Marshal
 import akka.http.scaladsl.unmarshalling.Unmarshal
+import akka.util.Timeout
+import com.compression.VideoCompression
+import com.ffmpeg.CompressionActor.{Request, Response}
+
+import scala.concurrent.Future
+import scala.concurrent.duration.DurationInt
+import scala.util._
+
 
 
 
 object Main {
   def main(args: Array[String]): Unit = {
     println("Hello world!")
+    VideoCompression.startCompression()
+    println("Compression started")
 
-    val rootBehavior = Behaviors.setup[Nothing] { context =>
+    val rootBehavior = Behaviors.setup[Request] { context =>
       //val store = context.spawn(RootActor(), "Store")
-      implicit val store = ActorSystem(Behaviors.empty, "SingleRequest")
+      implicit val store = ActorSystem(Behaviors.empty, "RootStore")
+
+
+      implicit val scheduler = store.scheduler
+      implicit val timeout = Timeout(5.seconds)
+      implicit val ec = store.executionContext
+
 
       val videoController = new VideoController(store)(context.system)
       val fileManager = new FileManagerController(store)(context.system)
@@ -32,6 +49,6 @@ object Main {
       Behaviors.same
     }
 
-  ActorSystem[Nothing](rootBehavior, "API")
+  ActorSystem[Request](rootBehavior, "API")
 }
 }
