@@ -26,8 +26,7 @@ import scala.util._
 object Main {
   def main(args: Array[String]): Unit = {
     println("Hello world!")
-    VideoCompression.startCompression()
-    println("Compression started")
+
 
     val rootBehavior = Behaviors.setup[Request] { context =>
       //val store = context.spawn(RootActor(), "Store")
@@ -50,5 +49,8 @@ object Main {
     }
 
   ActorSystem[Request](rootBehavior, "API")
+
+    VideoCompression.startCompression()
+    println("Compression started")
 }
 }
